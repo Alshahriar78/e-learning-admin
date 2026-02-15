@@ -23,7 +23,7 @@ const Login = () => {
     const { token, user } = res.data;
 
     // 🔐 ADMIN CHECK
-    if (user.role !== 'ADMIN') {
+    if (user?.role !== 'ADMIN') {
       setError('Access denied. Admin only.');
       return;
     }
