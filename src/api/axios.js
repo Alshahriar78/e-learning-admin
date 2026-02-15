@@ -1,10 +1,10 @@
 import axios from 'axios';
 
-const API_URL = 'https://e-learning-admin-1ylq.onrender.com/api';
+const API_URL = 'https://e-learning-backend-3ql4.onrender.com/api';
 
 const api = axios.create({
   baseURL: API_URL,
-  
+  withCredentials: true,
 });
 
 api.interceptors.request.use(
