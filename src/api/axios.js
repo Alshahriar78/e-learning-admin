@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://e-learning-admin-1ylq.onrender.com';
+const API_URL = 'https://e-learning-admin-1ylq.onrender.com/api';
 
 const api = axios.create({
   baseURL: API_URL,
