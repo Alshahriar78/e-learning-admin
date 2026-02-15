@@ -21,7 +21,7 @@ const Login = () => {
     const res = await authApi.login(formData);
 
     const { token, user } = res.data;
-
+    console.log(user)
     // 🔐 ADMIN CHECK
     if (user?.role !== 'ADMIN') {
       setError('Access denied. Admin only.');
